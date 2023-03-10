@@ -11,23 +11,15 @@
         <div class="top-row px-4">
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
-        
+
         <article class="content px-4">
             <Demo_TabsTest.Pages.PrintTime text="@para_text" />
             <BootstrapBlazor.Components.Button OnClick="OnTabClick" Text="刷新" />
 
-				<BootstrapBlazor.Components.Tab ClickTabToNavigation="true"  ShowExtendButtons="true"  ShowClose="true" 
-                 Body="@Body">
+            <p>点击 TabItem 试试看</p>
 
-
-	@*		 	<BootstrapBlazor.Components.TabItem >
-					<HeaderTemplate>
-						<BootstrapBlazor.Components.Button OnClick="OnTabClick">测试</BootstrapBlazor.Components.Button>
-					</HeaderTemplate>
-				</BootstrapBlazor.Components.TabItem>*@
-
-
-				</BootstrapBlazor.Components.Tab>
+            <BootstrapBlazor.Components.Tab ClickTabToNavigation="true" ShowExtendButtons="true" ShowClose="true" OnClickTabItemAsync="OnClickTabItemAsync">
+            </BootstrapBlazor.Components.Tab>
         </article>
     </main>
 </div>
